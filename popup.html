@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+ <head>
+  <title>PiCast</title>
+  <style>
+	body {
+        min-width:257px;
+        overflow-x:hidden;
+      }
+	button{
+		align: center;
+	}
+  </style>
+ </head>
+ <body>
+	<table>
+		<tr>
+		<td>
+		Link to cast   
+		</td>
+		<td>
+	   <input type="text" id="content" />   
+	   </td>
+	   </tr>
+	   <tr>
+	   <td>
+	   Pi Server
+	   </td>
+	   <td>
+	   <input type="text" id="server" value="192.168.0.100:8008" />
+	   </td>
+	   </tr>
+	   <tr>
+	   <td>
+	   <input class="button" type="button" value="Cast" id="cast" />
+	   </td>
+	   <td>
+	   <input class="button" type="button" value="Stop Cast" id="stop"/>
+	   </td>
+	   </tr>
+   </table>
+   <div id="message"> </div>
+ </body>
+ <script src="popup.js"></script>
+</html>
